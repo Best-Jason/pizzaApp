@@ -76,18 +76,18 @@ function Footer() {
 
     return (
         <footer className="footer">
-            {isOpen ? (
-                <div className="footer-content">
-                    <div className="border">We're currently open</div>
-                    <button className="btn">Order Now</button>
-                </div>
-            ) : (
-                <p>We are closed</p>
-            )}
+            {isOpen ? <Order /> : <p>We are closed</p>}
         </footer>
     );
 }
 
+
+function Order()   {
+    <div className="order">
+        <p>"We're currently open"</p>
+        <button className="btn">Order Now</button>
+    </div>
+}
 
 const pizzaData = [
     {
